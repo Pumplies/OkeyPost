@@ -1,0 +1,980 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy Light";
+  text-decoration: none;
+}
+
+button {
+  width: 170px;
+  height: 48px;
+  border-radius: 36px;
+  border: none;
+  background: linear-gradient(90deg, #00c97b, #00d981);
+  color: white;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 17px;
+  width: 240px;
+  height: 66px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Gilroy";
+}
+
+button:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+body {
+  padding: 0 60px;
+}
+
+header {
+  display: flex;
+  padding: 25px 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo start */
+.logo__circle__top {
+  width: 48px;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo__circle__bottom {
+  width: 48px;
+  position: relative;
+  top: -1px;
+}
+
+.logo__arrow {
+  width: 47px;
+  position: absolute;
+  left: 270px;
+  animation: lanim 2s infinite;
+  filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes lanim {
+  0% {
+    left: 270px;
+  }
+
+  50% {
+    left: 277.5px;
+  }
+
+  100% {
+    left: 270px;
+  }
+}
+
+.logo__text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+/* logo end */
+.top__nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__button {
+  color: black;
+  font-weight: bold;
+}
+
+.auth__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.auth a {
+  font-weight: bold;
+}
+
+.auth__contact button {
+  width: 170px;
+  height: 48px;
+  border-radius: 36px;
+  border: none;
+  background: linear-gradient(90deg, #00c97b, #00d981);
+  color: white;
+  font-weight: bold;
+}
+
+.block__1 {
+  background: linear-gradient(45deg, #5b52a3, #40b8ea);
+  width: 100%;
+  height: 680px;
+  border-radius: 36px;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block__1__left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.block__1__left h1 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 72px;
+  color: white;
+}
+
+.block__1__left p {
+  font-family: "Gilroy Light";
+  color: white;
+  line-height: 2.5;
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+.block__1__left button {
+  width: 260px;
+  height: 66px;
+}
+
+/* ///////////////////Второй блок Profit  */
+
+/* slider start */
+.profit {
+  padding: 160px 200px;
+}
+
+h2 {
+  font-size: 44px;
+  font-family: "Gilroy ExtraBold";
+  margin-bottom: 40px;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+}
+
+.slider__arrow__button {
+  width: 71px;
+}
+
+.slider__button {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 0px 25px;
+  transition: 0.3s;
+}
+
+.slider__button:hover {
+  background-color: #f2f6fc;
+  transition: 0.3s;
+}
+
+.slider__arrow__button {
+  width: 71px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+/* slider end */
+/* grid start*/
+.economy {
+  display: grid;
+  grid-template-columns: 450px 500px 450px;
+  grid-template-rows: 200px 320px 120px;
+  grid-template-areas:
+    "header1 header2 header3"
+    "content1 content2 content3"
+    "footer1 footer2 footer3";
+  margin-top: 53px;
+}
+
+.economy h3 {
+  font-weight: bolder;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.economy__right__h3 span,
+.price119,
+.uk h3 {
+  color: #01cd7d;
+}
+
+.economy__card {
+  width: 400px;
+  height: 120px;
+  background-color: #f2f6fc;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 33px;
+  gap: 28px;
+}
+
+.economy__card img {
+  width: 75px;
+  height: 54px;
+}
+
+.economy__card span {
+  font-size: 18px;
+}
+
+.economy__bottom__text {
+  text-align: center;
+}
+
+.economy__right__h3 {
+  grid-area: header3;
+  align-self: end;
+  margin-bottom: 44px;
+  margin-left: 50px;
+}
+
+.economy__left__h3 {
+  align-self: end;
+  margin-bottom: 44px;
+}
+
+.russia {
+  grid-area: content1;
+}
+
+.uk {
+  grid-area: content3;
+  margin-left: 50px;
+}
+
+.clothe__card {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.clothe__left {
+  grid-area: footer1;
+}
+
+.clothe__right {
+  grid-area: footer3;
+  justify-self: end;
+}
+
+.economy__bottom__text {
+  grid-area: footer2;
+  align-self: center;
+}
+
+/* grid end */
+
+/* amir*/
+/* bottom navbar profit*/
+
+.bottom__navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom__nav {
+  padding: 53px 50px 67px 51px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom__nav span {
+  padding-left: 15px;
+  font-family: "Gilroy ExtraBold";
+}
+
+.stick {
+  height: 100px;
+  border-left: 1px solid;
+  opacity: 0.3;
+}
+
+.block__2 {
+  background: linear-gradient(45deg, #5b52a3, #40b8ea);
+  width: 100%;
+  height: 480px;
+  border-radius: 36px;
+  padding: 0px 200px;
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.block__2__left {
+  padding-left: 110px;
+}
+
+.block__2__text__main {
+  font-family: "Gilroy ExtraBold";
+  color: white;
+  font-size: 30px;
+  line-height: 56px;
+}
+
+.block__2__text {
+  font-family: "Gilroy Light";
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.body__text p {
+  font-family: "Gilroy ExtraBold";
+  font-weight: 900;
+  font-size: 44px;
+  padding-bottom: 20px;
+}
+
+.lite__text p {
+  font-family: "Gilroy Light";
+  font-size: 20px;
+}
+
+/* profit UK */
+.profit__uk {
+  padding: 0 200px;
+}
+
+.body__text p {
+  font-family: "Gilroy ExtraBold";
+  font-weight: 900;
+  font-size: 44px;
+  padding-bottom: 20px;
+}
+
+.lite__text p {
+  font-family: "Gilroy Light";
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.profit__uk__input {
+  display: flex;
+  gap: 25px;
+}
+
+.input__uk__bottom {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input__uk {
+  border-bottom: solid 1px #222222;
+  width: 247px;
+}
+
+.input__uk__bottom input,
+select {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.calc {
+  margin-top: 32px;
+}
+
+.profit__uk__main {
+  width: 1400px;
+  height: 270px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+  padding: 46px 35px;
+}
+
+
+.validation__delivery {
+  padding-top: 80px;
+  padding-right: 260px;
+  padding-left: 260px;
+}
+
+.validation__main__text p {
+  font-family: "Gilroy ExtraBold";
+  font-size: 36px;
+}
+
+.validation__main__text {
+  padding-bottom: 30px;
+}
+
+.validation__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+
+}
+
+.stick2 {
+  border-left: solid 1px;
+  height: 50px;
+  opacity: 0.3;
+}
+
+.validation__text {
+  width: 550px;
+}
+
+.validation__text p {
+  font-weight: lighter;
+  font-size: 18px;
+  font-family: "Gilroy ExtraBold";
+}
+
+.validation_dates p {
+  font-size: 20px;
+  font-family: "Gilroy ExtraBold";
+}
+
+.validation_dates span {
+  font-size: 14px;
+  font-family: "Gilroy Light";
+}
+
+.validation_dates {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.validation_cales {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.validation_result {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.validaiton_cales p {
+  font-size: 20px;
+  font-family: "Gilroy ExtraBold";
+}
+
+.validaiton_cales span {
+  font-size: 14px;
+  font-family: "Gilroy Light";
+}
+
+.validation_result p {
+  font-size: 20px;
+  font-family: "Gilroy ExtraBold";
+}
+
+.validation_result span {
+  font-size: 14px;
+  font-family: "Gilroy Light";
+}
+
+/* four step start */
+.four__steps {
+  margin: 170px 200px 150px 200px;
+}
+
+.four__cards__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.four__card h3 {
+  font-family: "Gilroy ExtraBold";
+  margin: 16px 0 7px 0;
+  font-size: 20px;
+}
+
+.four__card p {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.four__card span {
+  color: #01cd7d;
+}
+
+.four_bottom__text {
+  line-height: 36px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* four step end */
+
+
+/* plusi */
+.plusi__block {
+  margin: 0 200px 80px 200px;
+}
+
+.plusi__block p {
+  line-height: 36px;
+  font-size: 20px;
+  margin: 20px 0 40px 0;
+}
+
+.plusi {
+  display: flex;
+  gap: 30px;
+
+}
+
+.plusi__card {
+  width: 450px;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+  padding: 37px;
+}
+
+.plusi__card h3 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  margin: 30px 0 10px 0;
+}
+
+.plusi__card p {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+/* RATING start-------------------------------------- */
+.rating polygon:hover {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.rating polygon:hover {
+  fill: black;
+}
+
+.rating polygon {
+  fill: lightgray;
+}
+
+.rating polygon.active {
+  fill: gold;
+}
+
+/* RATING end-------------------------------------- */
+
+
+/* Отзывы start----------------------- */
+.otzivi__block {
+  margin: 0 200px;
+}
+
+.otzivi {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr
+}
+
+.otzivi__card {
+  width: 685px;
+  height: 260px;
+  display: flex;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+}
+
+.otzivi__text {
+  padding: 20px 0px 20px 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otzivi__name {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.overview {
+  line-height: 26px;
+  font-size: 16px;
+  width: 365px;
+  margin: 14px 0 41px 0;
+}
+
+.span__bold {
+  font-family: "Gilroy ExtraBold";
+}
+
+.otzivi__city {
+  margin-left: 15px;
+}
+
+.otzivi__data {
+  margin-left: 20px;
+}
+
+.otzivi__button {
+  margin-top: 40px;
+}
+
+/* Отзывы end----------------------- */
+
+/* your personal adress UK*/
+
+.your_personal_adress_UK {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.your_personal_text p {
+  font-family: "Gilroy ExtraBold";
+  font-size: 44px;
+}
+
+.your_personal_text {
+  padding-bottom: 12px;
+}
+
+.your_personal_description p {
+  font-family: "Gilroy Light";
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* PERSONAL END*/
+
+/* BLOCK 4 */
+
+.block__4 {
+  background: linear-gradient(45deg, #5b52a3, #40b8ea);
+  width: 100%;
+  height: 250px;
+  border-radius: 36px;
+  padding: 0px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.block__4__left p {
+  color: white;
+  font-family: "Gilroy ExtraBold";
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.block__4__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block__4__input input {
+  width: 513px;
+  height: 53px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 25px;
+}
+
+.block__4__input input::placeholder {
+  color: white;
+  font-family: "Gilroy Light";
+  font-size: 16px;
+}
+
+.block__4__input {
+  border-bottom: solid 1px #ffffff;
+  width: 513px;
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.block__4__input img {
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+/* BLOCK 4 END*/
+
+/* four step start */
+.four__steps {
+  margin: 170px 200px 150px 200px;
+}
+
+.four__steps h2 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 44px;
+  padding-bottom: 15px;
+}
+
+.four__cards__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.four__card h3 {
+  font-family: "Gilroy ExtraBold";
+  margin: 16px 0 7px 0;
+  font-size: 20px;
+}
+
+.four__card p {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.four__card span {
+  color: #01cd7d;
+}
+
+.four_bottom__text {
+  line-height: 36px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* four step end */
+
+/* plusi */
+.plusi__block {
+  margin: 0 200px 80px 200px;
+}
+
+.plusi__block h2 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 44px;
+}
+
+.plusi__block p {
+  line-height: 36px;
+  font-size: 20px;
+  margin: 20px 0 40px 0;
+}
+
+.plusi {
+  display: flex;
+  gap: 30px;
+}
+
+.plusi__card {
+  width: 450px;
+  height: 250px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+  padding: 37px;
+}
+
+.plusi__card h3 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  margin: 30px 0 10px 0;
+}
+
+.plusi__card p {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+/* RATING start-------------------------------------- */
+.rating polygon:hover {
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.rating polygon:hover {
+  fill: black;
+}
+
+.rating polygon {
+  fill: lightgray;
+}
+
+.rating polygon.active {
+  fill: gold;
+}
+
+/* RATING end-------------------------------------- */
+
+/* Отзывы start----------------------- */
+.otzivi__block {
+  margin: 0 200px;
+}
+
+.otzivi {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.otzivi__card {
+  width: 685px;
+  height: 260px;
+  display: flex;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 70px #dcdcdc58;
+}
+
+.otzivi__text {
+  padding: 20px 0px 20px 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otzivi__name {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.overview {
+  line-height: 26px;
+  font-size: 16px;
+  width: 365px;
+  margin: 14px 0 41px 0;
+}
+
+.span__bold {
+  font-family: "Gilroy ExtraBold";
+}
+
+.otzivi__city {
+  margin-left: 15px;
+}
+
+.otzivi__data {
+  margin-left: 20px;
+}
+
+.otzivi__button {
+  margin-top: 40px;
+}
+
+/* Отзывы end----------------------- */
+
+/* footer START*/
+
+footer {
+  display: flex;
+  margin-right: 260px;
+  margin-left: 260px;
+  justify-content: space-between;
+}
+
+.footer__left__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 166px;
+}
+
+.footer__left__11 {
+  padding-top: 34px;
+}
+
+.footer__left__2 span {
+  font-family: "Gilroy ExtraBold";
+  font-size: 16px;
+}
+
+.footer__left__2 p {
+  font-family: "Gilroy Light";
+  font-size: 14px;
+}
+
+.footer__right__1 span {
+  font-family: "Gilroy ExtraBold";
+  font-size: 16px;
+}
+
+.footer__right__1 p {
+  font-family: "Gilroy Light";
+  font-size: 14px;
+}
+
+.footer__right__2 span {
+  font-family: "Gilroy ExtraBold";
+  font-size: 16px;
+}
+
+.footer__right__2 p {
+  font-family: "Gilroy Light";
+  font-size: 14px;
+}
+
+.okeypost p {
+  font-family: "Gilroy Light";
+  font-size: 14px;
+}
+
+.footer__right__2 {
+  padding-bottom: 100px;
+}
+
+.okeypost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+  opacity: 0.4;
+  width: 100%;
+  height: 57px;
+}
+
+.auth a {
+  text-decoration: none;
+  color: black;
+}

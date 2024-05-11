@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy Light";
+    text-decoration: none;
+}
+
+button {
+    width: 170px;
+    height: 48px;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(90deg, #00c97b, #00d981);
+    color: white;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 17px;
+}
+
+body {
+    padding: 0 60px;
+}
+
+header {
+    display: flex;
+    padding: 25px 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo start */
+.logo__circle__top {
+    width: 48px;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo__circle__bottom {
+    width: 48px;
+    position: relative;
+    top: -1px;
+}
+
+.logo__arrow {
+    width: 47px;
+    position: absolute;
+    left: 270px;
+    animation: lanim 2s infinite;
+    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes lanim {
+    0% {
+        left: 270px;
+    }
+
+    50% {
+        left: 277.5px;
+    }
+
+    100% {
+        left: 270px;
+    }
+}
+
+.logo__text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+/* logo end */
+
+.top__nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__button {
+    color: black;
+    font-weight: bold;
+}
+
+.auth__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 42px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.auth a {
+    font-weight: bold;
+}
+
+.auth__contact button {
+    width: 170px;
+    height: 48px;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(90deg, #00c97b, #00d981);
+    color: white;
+    font-weight: bold;
+}
+
+
+.auth a {
+    text-decoration: none;
+    color: black;
+}
+
+/*registrator*/
+
+.login {
+    width: 500px;
+    height: 640px;
+    margin-top: 120px;
+    padding: 0px 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container {
+    border-radius: 16px;
+    width: 430px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 70px 0px #8A8A8A1A;
+}
+
+.login-main h2 {
+    font-family: 'Gilroy ExtraBold';
+    font-size: 24px;
+    color: #1F2428;
+}
+
+.login-descp input {
+    width: 400px;
+    height: 60px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #C0C9D7
+}
+
+.login-descp span {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Gilroy ExtraBold';
+    color: #1F2428;
+}
+
+.login-descp {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container a {
+    padding: 20px 0px;
+    text-decoration: none;
+    color: #00d981;
+    font-size: 14px;
+    font-family: 'Gilroy Light';
+}
+
+#black {
+    color: black;
+    font-family: 'Gilroy';
+    font-size: 14px;
+}

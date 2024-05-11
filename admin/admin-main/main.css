@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #F2F6FC;
+    height: 120px;
+}
+
+.header-container {
+    padding: 36px 160px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-logotip {
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav a {
+    color: #1F2428;
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 30px;
+    font-family: 'Gilroy Light';
+    font-weight: 600;
+}
+
+.header-nav a:hover {
+    color: #01CD7D;
+    transition: 0.2s;
+}
+
+button {
+    width: 170px;
+    height: 48px;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(90deg, #00c97b, #00d981);
+    color: white;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* orders start */
+
+.orders {
+    padding: 60px 90px 60px 90px;
+}
+
+.orders-text {
+    width: 1500px;
+    display: flex;
+    align-items: center;
+}
+
+
+.orders-text h1 {
+    padding-left: 25px;
+    font-size: 26px;
+    font-family: 'Gilroy ExtraBold';
+    line-height: 36px;
+}
+
+.orders-container {
+    display: flex;
+    align-items: center;
+}
+
+.orders-btn button {
+    width: 200px;
+    height: 48px;
+    font-family: 'Gilroy Light';
+    font-size: 13px;
+}
+
+
+/* orders end */
+
+/* default start*/
+.default {
+    margin-top: 26px;
+    padding: 0px 100px;
+    margin-left: 20px;
+}
+
+.default-container {
+    width: 500px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+.default-container span {
+    font-family: 'Gilroy ExtraBold';
+    font-size: 18px;
+    line-height: 20.7px;
+}
+
+.inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs-container input {
+    width: 180px;
+    text-align: center;
+    height: 60px;
+    border-radius: 1px;
+    border: 1px solid #C0C9D7;
+    outline: none;
+}
+
+.inputs-container select {
+    width: 180px;
+    text-align: center;
+    height: 60px;
+    border-radius: 1px;
+    border: 1px solid #C0C9D7;
+    outline: none;
+    font-family: 'Gilroy Light';
+    color: #222222;
+    font-size: 14px;
+}
+
+.inputs-container input::placeholder {
+    font-family: 'Gilroy Light';
+    color: #222222;
+    font-size: 14px;
+}
+
+.inputs-btn {
+    padding-top: 15px;
+}
+
+#del {
+    background-color: white;
+}
+
+.inputs-btn button {
+    width: 180px;
+    height: 60px;
+}
+
+#del {
+    background: white;
+    color: #01CD7D;
+}
+
+/* default end*/

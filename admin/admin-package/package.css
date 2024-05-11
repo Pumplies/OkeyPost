@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #F2F6FC;
+    height: 120px;
+}
+
+.header-container {
+    padding: 36px 160px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-logotip {
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav a {
+    color: #1F2428;
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 30px;
+    font-family: 'Gilroy Light';
+    font-weight: 600;
+}
+
+.header-nav a:hover {
+    color: #01CD7D;
+    transition: 0.2s;
+}
+
+button {
+    width: 170px;
+    height: 48px;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(90deg, #00c97b, #00d981);
+    color: white;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* expences start*/
+
+.expences {
+    margin-top: 60px;
+    padding: 0px 100px;
+}
+
+.expences-container h1 {
+    color: #1F2428;
+    font-size: 26px;
+    font-family: 'Gilroy ExtraBold';
+}
+
+.expences-container {
+    padding-bottom: 14px;
+}
+
+.expences-container-two span {
+    font-size: 20px;
+    color: #1F2428;
+    font-family: 'Gilroy ExtraBold';
+}
+
+.expences-inputs {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.expences-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    padding-right: 20px;
+}
+
+.expences-text p {
+    color: #1F2428;
+    font-size: 16px;
+    font-family: 'Gilroy ExtraBold';
+    padding-bottom: 10px;
+}
+
+.expences-text input {
+    width: 553px;
+    height: 60px;
+    border-radius: 1px;
+    border: 1px solid #C0C9D7;
+    outline: none;
+    padding-left: 10px;
+}
+
+.expences-text input::placeholder {
+    font-size: 14px;
+    font-family: 'Gilroy Light';
+    line-height: 16px;
+}
+
+
+.expences-button {
+    margin-top: 50px;
+    padding: 0px 100px;
+}
+
+.expences-button button {
+    width: 180px;
+    height: 60px;
+}
+
+/* expences end*/

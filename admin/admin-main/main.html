@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdminMain</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-logotip">
+          <img src="/admin/admin-main/main-images/_2243895274448.svg" alt="" />
+        </div>
+        <div class="header-nav">
+          <a href="/admin/admin-main/main.html">Заказы</a>
+          <a href="/admin/admin-package/package.html">Посылки</a>
+          <a href="">Транзакции</a>
+          <a href="">Пользователи</a>
+          <a href="">Редактор страниц </a>
+          <a href="">Расходы фирмы </a>
+          <a href="">Расходы по ЗП </a>
+          <a href="">Настройки</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="orders">
+      <div class="orders-container">
+        <div class="orders-text">
+          <h1>Заказы</h1>
+        </div>
+        <div class="orders-btn">
+          <button>Добавить новый заказ</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="default">
+      <div class="default-container">
+        <span>Обычные</span>
+      </div>
+      <div class="inputs">
+        <div class="inputs-container">
+          <form action="">
+            <input type="text" placeholder="Месяц" />
+            <input type="text" placeholder="01.11.2021" />
+            <input type="text" placeholder="12.12.2021" />
+            <input type="text" placeholder="ID заказа" />
+            <input type="text" placeholder="User ID" />
+            <input type="text" placeholder="Фамилия" />
+            <input type="text" placeholder="Магазин" />
+            <select name="status">
+              <option value="Активно" selected>Активно</option>
+              <option value="Пассивно">Пассивно</option>
+            </select>
+          </form>
+        </div>
+        <div class="inputs-btn">
+          <button id="view">Показать</button>
+          <button id="del">Сбросить</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
