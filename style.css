@@ -208,6 +208,65 @@ h2 {
 
 /* slider end */
 /* grid start*/
+
+
+
+/* grid slider start -----*/
+
+.big__kurtka {
+  overflow: hidden;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius: 50%;
+  background-color: #F2F6FC;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+.big__kurtka img {
+  width: 475px;
+  height: 499px;
+}
+.slider__left, .slider__right {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: start;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+.slider__left img, .slider__right img {
+  width: 120px;
+  height: 120px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s ease;
+}
+.big__kurtka .slide:not(:first-child) {
+  margin-left: 15px; 
+}
+
+.slider__button__right, .slider__button__left {
+  cursor: pointer;
+}
+
+
+.slider__left,
+.slider__right {
+  border-radius: 50%;
+  background-color: #F2F6FC;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+}
+
+/* grid slider end -------*/
 .economy {
   display: grid;
   grid-template-columns: 450px 500px 450px;
