@@ -31,17 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const editButton = document.querySelector('.edit');
 
-    // Заполните поля данными из localStorage
     mainNameElement.textContent = localStorage.getItem('Имя');
     topName.textContent = localStorage.getItem('Имя');
     loginElement.textContent = localStorage.getItem('Логин');
     emailElement.textContent = localStorage.getItem('E-mail');
-    phoneNumberElement.textContent = localStorage.getItem('Номер телефона');
+    phoneNumberElement.textContent = localStorage.getItem('Телефон');
     adresElement.textContent = localStorage.getItem('Адрес');
-
-    // editButton.addEventListener('click', function () {
-    //     // Здесь можно добавить код для редактирования данных
-    //     // Например, можно открыть модальное окно или перенаправить пользователя на другую страницу для редактирования
-    //     // window.location.href = 'страница_редактирования.html';
-    // });
 });
+

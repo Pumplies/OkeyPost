@@ -16,6 +16,7 @@ button {
     font-family: "Gilroy";
     font-weight: bold;
     font-size: 17px;
+    cursor: pointer;
 }
 
 body {
@@ -108,6 +109,7 @@ header {
     background: linear-gradient(90deg, #00c97b, #00d981);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -148,7 +150,8 @@ header {
     height: 60px;
     outline: none;
     border-radius: 6px;
-    border: 1px solid #C0C9D7
+    border: 1px solid #C0C9D7;
+    padding-left: 15px;
 }
 
 .login-descp span {
@@ -176,4 +179,12 @@ header {
     color: black;
     font-family: 'Gilroy';
     font-size: 14px;
+}
+
+.error-label {
+    display: block;
+    color: red;
+    margin-bottom: 10px;
+    font-family: 'Gilroy Light';
+    font-weight: 800;
 }

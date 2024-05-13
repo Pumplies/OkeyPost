@@ -21,7 +21,7 @@
     </div>
     </div>
     <nav class="top__nav">
-      <a href="../page2/page2.html" class="nav__button">Как покупать</a>
+      <a href="../how__to__buy/how__to__buy.html" class="nav__button">Как покупать</a>
       <a href="../page3/page3.html" class="nav__button">Распродажи</a>
       <a href="../page4/page4.html" class="nav__button">Цены</a>
       <a href="../page5/page5.html" class="nav__button">Помощь</a>
@@ -31,7 +31,7 @@
     </nav>
     <div class="auth__contact">
       <div class="auth">
-        <img src="/assets/img/User.svg" alt="" class="user" />
+        <img src="../assets/img/User.svg" alt="" class="user" />
         <a href="/login/login.html">Вход</a>
       </div>
       <button class="contact">Связаться с нами</button>
@@ -45,23 +45,28 @@
       </div>
       <div class="login-descp">
         <span>Номер телефона:</span>
-        <input type="number" />
-
+        <input id="num" type="number" />
+        <p class="error-label"></p>
+        
         <span>Ваш email:</span>
-        <input type="email" />
+        <input id="email" type="email" />
+        <p class="error-label"></p>
 
         <span>Ваш логин:</span>
-        <input type="text" />
+        <input id="login" type="text" />
+        <p class="error-label"></p>
 
         <span>Ваш пароль:</span>
-        <input type="password" />
+        <input id="password" type="password" />
+        <p class="error-label"></p>
 
         <span>Введите пароль повторно:</span>
-        <input type="password" />
+        <input id="password-two" type="password" />
+        <p class="error-label"></p>
       </div>
       <a href="/login/login.html">Войти в свой <span id="black">имеющийся</span> личный кабинет</a>
 
-      <button>Войти</button>
+      <button class="sub" type="submit">Войти</button>
     </div>
   </section>
 </body>
