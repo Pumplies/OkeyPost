@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy Light';
+}
+
+header {
+    background: #F2F6FC;
+    height: 120px;
+}
+
+.header-container {
+    padding: 36px 160px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-logotip {
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav a {
+    color: #1F2428;
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 30px;
+    font-family: 'Gilroy Light';
+    font-weight: 600;
+}
+
+.header-nav a:hover {
+    color: #01CD7D;
+    transition: 0.2s;
+}
+
+button {
+    width: 170px;
+    height: 48px;
+    border-radius: 36px;
+    border: none;
+    background: linear-gradient(90deg, #00c97b, #00d981);
+    color: white;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+/* RATING start-------------------------------------- */
+.rating polygon:hover {
+    cursor: pointer;
+    transition: 500ms;
+  }
+  
+  .rating polygon:hover {
+    fill: black;
+  }
+  
+  .rating polygon {
+    fill: lightgray;
+  }
+  
+  .rating polygon.active {
+    fill: gold;
+  }
+  
+  /* RATING end-------------------------------------- */
+  
+  
+  /* Отзывы start----------------------- */
+  .otzivi__block {
+    margin: 20px 200px 0 200px;
+  }
+  
+  .otzivi {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr
+  }
+  
+  .otzivi__card {
+    width: 685px;
+    height: 260px;
+    display: flex;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 0 70px #dcdcdc58;
+    position: relative;
+  }
+  .otzivi__card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+  }
+  
+  .otzivi__text {
+    padding: 20px 0px 20px 38px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .otzivi__name {
+    font-family: "Gilroy ExtraBold";
+    font-size: 18px;
+    margin: 0 0 6px 0;
+  }
+  
+  .overview {
+    line-height: 26px;
+    font-size: 16px;
+    width: 365px;
+    margin: 14px 0 41px 0;
+  }
+  
+  .span__bold {
+    font-family: "Gilroy ExtraBold";
+  }
+  
+  .otzivi__city {
+    margin-left: 15px;
+  }
+  
+  .otzivi__data {
+    margin-left: 20px;
+  }
+  
+  .otzivi__button {
+    margin-top: 40px;
+  }
+  .buttons {
+    display: flex;
+    margin-top: 20px;
+    align-self: flex-end;
+    gap: 10px;
+    
+  }
+  .succes__btn {
+
+  }
+  .refusal {
+    background: rgb(206, 0, 0);
+  }
+  
+  /* Отзывы end----------------------- */

@@ -21,7 +21,7 @@ registrationBtn.addEventListener("click", async (e) => {
   const passwordTwo = passwordInputTwo.value;
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  if (number === "" || number.length < 11) {
+  if (number === "" && number.length >= 11) {
     showError(numberInput, "Введите свой действительный номер телефона");
     isValid = false;
   } else {
@@ -56,15 +56,28 @@ registrationBtn.addEventListener("click", async (e) => {
 
   if (isValid) {
     const dataToSend = {
-      "Телефон": number,
-      "E-mail": email,
-      "Логин": login,
-      "passwordUser": passwordOne,
+      phoneNumber: number,
+      emailUser: email,
+      loginUser: login,
+      passwordUser: passwordOne,
     };
 
     await sendDataToAPI(dataToSend);
-    addLocalStorage(number, email, login, passwordOne);
   }
+
+  function addLocalStorage(
+    numberInput,
+    emailInput,
+    passwordInputOne,
+    loginInput
+  ) {
+    localStorage.setItem("Телефон", numberInput);
+    localStorage.setItem("E-mail", emailInput);
+    localStorage.setItem("Логин", loginInput);
+    localStorage.setItem("password", passwordInputOne); 
+    window.location.href = "../login/login.html";
+  }
+  addLocalStorage(number, email, passwordOne, login);
 });
 
 async function sendDataToAPI(data) {
@@ -83,17 +96,9 @@ async function sendDataToAPI(data) {
 
     const responseData = await response.json();
     console.log(responseData);
-    window.location.href = "../login/login.html";
   } catch (error) {
     console.error("Ошибка:", error.message);
   }
-}
-
-function addLocalStorage(number, email, login, password) {
-  localStorage.setItem("Телефон", number);
-  localStorage.setItem("E-mail", email);
-  localStorage.setItem("Логин", login);
-  localStorage.setItem("password", password);
 }
 
 function showError(input, message) {

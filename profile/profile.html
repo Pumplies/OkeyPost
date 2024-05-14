@@ -91,12 +91,28 @@
             </div>
             <div class="right__bottom">
                 <button class="edit">Редактировать</button>
-                <a href="changePassword/changePassword.html" class="change__password">Изменить пароль</a>
+            <span  class="change__password">
+                Изменить пароль
+            </span>
             </div>
-
+            
         </div>
 
     </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Изменить пароль</h2>
+          <input type="password" id="oldPassword" placeholder="Старый пароль">
+          <p class="error-label"></p>
+          <input type="password" id="newPassword" placeholder="Новый пароль">
+          <p class="error-label"></p>
+          <input type="password" id="confirmPassword" placeholder="Подтвердите пароль">
+          <p class="error-label"></p>
+          <button id="changePasswordBtn">Сохранить</button>
+        </div>
+      </div>
 </body>
 
 </html>

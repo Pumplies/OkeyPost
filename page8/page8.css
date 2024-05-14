@@ -338,3 +338,70 @@ footer {
     width: 100%;
     height: 57px;
 }
+
+.delete-txt {
+    font-family: 'Girloy Light';
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0px 15px;
+  }
+
+  .modal {
+    display: none;
+  
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content h1 {
+    font-family: 'Gilroy ExtraBold';
+    font-size: 40px;
+  }
+  
+  .modal-content p {
+    font-family: 'Gilroy Light';
+    font-size: 20px;
+  }
+  /* Стили для ссылок в модальном окне */
+  .modal-content a {
+    color: #007bff; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+    font-family: 'Gilroy Light';
+    font-size: 25px;
+  }
+  
+  .modal-content a:hover {
+    color: #0056b3; /* Цвет ссылки при наведении */
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+  }
+  

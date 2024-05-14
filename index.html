@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>OkeyPost</title>
   <link rel="stylesheet" href="style.css" />
   <script src="app.js" defer></script>
 </head>
@@ -32,9 +32,33 @@
     <div class="auth__contact">
       <div class="auth">
         <img src="assets/img/User.svg" alt="" class="user" />
-        <a href="/login/login.html">Вход</a>
+        <a href="/okpost/login/login.html">Вход</a>
       </div>
       <button class="contact">Связаться с нами</button>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span>
+    <h1>
+      Добро пожаловать в OkeyPost!
+    </h1>
+    <br>
+    <p>
+
+      OkeyPost - это ваш надежный партнер по доставке товаров из Великобритании в Россию. <br> Мы стремимся сделать процесс покупок за рубежом простым и доступным для каждого.
+      <br>
+      
+      Наша миссия - сделать ваше онлайн-шопинговое путешествие максимально комфортным. <br> Мы предлагаем широкий выбор товаров от ведущих британских брендов, начиная от моды и косметики и заканчивая электроникой и товаров для дома.
+      <br>
+      
+      Что делает нас особенными? Наша команда специализируется на оперативной и надежной доставке прямо к вашему порогу. <br> Мы ценим ваше время и доверие, поэтому каждая посылка обрабатывается с особой заботой и вниманием к деталям.
+      <br>
+      Присоединяйтесь к сотням довольных клиентов, которые выбирают OkeyPost для своих международных покупок.  <br><br> Доверьтесь нам, и мы превратим ваш онлайн-шопинг в удовольствие!</p>
+      <br>
+      Для связи с нами, напишите на <a href="mailto:info@okeypost.com">info@okeypost.com</a> или позвоните по номеру +44 123456789.
+    </div>
+</div>
+
     </div>
   </header>
   <section class="block__1">
@@ -510,7 +534,7 @@
 
         <div class="otzivi__text">
           <h3 class="otzivi__name">NIKOLAY S</h3>
-          <span class="rating"></span>
+          <span class="rating" data-value="4"></span>
           <span class="overview">Ваша доставка самая быстрая и дешёвая!!!</span>
 
           <div class="data__city">
@@ -533,7 +557,7 @@
         <div class="otzivi__text">
           <h3 class="otzivi__name">DMITRIY D</h3>
 
-          <span class="rating"></span>
+          <span class="rating" data-value="5"></span>
           <span class="overview">Пуховик Levi’s c eBay. Всё приехало быстро и целым.</span>
           <div class="data__city">
             <span class="span__bold">Дата:</span>
@@ -556,7 +580,7 @@
         <div class="otzivi__text">
           <h3 class="otzivi__name">VLADIMIR E</h3>
 
-          <span class="rating"></span>
+          <span class="rating" data-value="5"></span>
           <span class="overview">Огонь, как всегда! Отдельное спасибо за доп.упаковку, часики от Apple пришли в простом
             бумажном пакете</span>
           <div class="data__city">
@@ -579,7 +603,7 @@
 
         <div class="otzivi__text">
           <h3 class="otzivi__name">Оксана</h3>
-          <span class="rating"></span>
+          <span class="rating" data-value="4"></span>
           <span class="overview">Очень быстро, надежно! Как всегда большое спасибо за работу!</span>
           <div class="data__city">
             <span class="span__bold">Дата:</span>
